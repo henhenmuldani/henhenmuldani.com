@@ -2,7 +2,7 @@
 title: "KMOB App"
 techStacks: "Android Native, Rest-API, Retrofit"
 year: "2021"
-image: "/../public/images/projects/mobile/kmob/kmob_hero.png"
+image: "/images/projects/mobile/kmob/kmob_hero.png"
 ---
 
 ![KMOB App](/images/projects/mobile/kmob/kmob_hero.png)

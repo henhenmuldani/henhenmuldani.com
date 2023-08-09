@@ -2,7 +2,7 @@
 title: "Movie Catalogue App"
 techStacks: "Android Native, Rest-API, Retrofit"
 year: "2021"
-image: "/../public/images/projects/mobile/movieCatalogue/movie_hero.png"
+image: "/images/projects/mobile/movieCatalogue/movie_hero.png"
 ---
 
 ![Movie Catalogue App](/images/projects/mobile/movieCatalogue/movie_hero.png)
