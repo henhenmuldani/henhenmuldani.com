@@ -43,7 +43,13 @@ const Contact = () => {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     //* alert(JSON.stringify(values));
     //* console.log(values);
-    const res = await fetch("http://localhost:3000/api/submit-form", {
+    //! Local
+    /*     const res = await fetch("http://localhost:3000/api/submit-form", {
+      method: "POST",
+      body: JSON.stringify(values),
+    }); */
+    //! Production
+    const res = await fetch("https://www.henhenmuldani.com/api/submit-form", {
       method: "POST",
       body: JSON.stringify(values),
     });

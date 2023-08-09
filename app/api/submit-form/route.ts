@@ -8,7 +8,7 @@ const notion = new Client({
   auth: notionSecret,
 });
 
-export async function GET() {
+/* export async function GET() {
   if (!notionSecret || !notionDatabaseId)
     throw new Error("Missing notion secret or database id");
 
@@ -18,7 +18,7 @@ export async function GET() {
   //* console.log(query);
 
   return NextResponse.json(query);
-}
+} */
 
 export async function POST(request: NextRequest) {
   //* const { name } = await request.json();
