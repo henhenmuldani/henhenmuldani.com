@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
-import LogoDark from "../public/images/logo-light.png";
-import LogoLight from "../public/images/logo-dark.png";
+import LogoDark from "../public/images/logo_light.svg";
+import LogoLight from "../public/images/logo_dark.svg";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
@@ -50,7 +50,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="z-10 mx-auto flex items-center justify-between bg-white p-6 dark:bg-black">
+    <div className="z-10 mx-auto flex select-none items-center justify-between bg-white p-6 dark:bg-black">
       <Link href="/">
         {theme === "dark" ? (
           <Image src={LogoDark} alt="Logo Henhen" height={36} width={36} />

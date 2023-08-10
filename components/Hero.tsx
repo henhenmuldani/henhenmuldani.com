@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ProfileImage from "../public/images/profile.png";
+import ProfileImage from "../public/images/profile.jpg";
 
 const Hero = () => {
   return (
     <section className="flex flex-col items-center justify-center p-6 md:flex-row md:space-x-4">
       <Link href={"/"}>
         <Image
-          className="rounded-full border-8 border-black shadow-black hover:border-[#CBA65F] dark:border-white dark:hover:border-[#CBA65F]"
+          className="select-none rounded-full border-8 border-black shadow-black hover:border-[#CBA65F] dark:border-white dark:hover:border-[#CBA65F]"
           src={ProfileImage}
           alt="Henhen Imam Muldani"
           width={250}
