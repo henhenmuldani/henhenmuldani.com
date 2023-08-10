@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Providers from "./providers";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -20,6 +21,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
+
       <body className={`mx-auto max-w-5xl ${montserrat.className}`}>
         <Providers>
           <ToastContainer />

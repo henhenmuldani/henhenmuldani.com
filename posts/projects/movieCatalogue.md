@@ -11,7 +11,7 @@ image: "/images/projects/mobile/movieCatalogue/movie_hero.png"
 
 **Year**: 2021
 
-**Tech Stacks**: Android Native, Rest-API, Retrofit
+**Tech Stacks**: Android Native(Java), Rest-API, Retrofit
 
 ## Overview
 

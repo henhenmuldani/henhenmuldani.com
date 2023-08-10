@@ -11,7 +11,7 @@ image: "/images/projects/mobile/kmob/kmob_hero.png"
 
 **Year**: 2021
 
-**Tech Stacks**: Android Native, Rest-API, Retrofit
+**Tech Stacks**: Android Native(Java), Rest-API, Retrofit
 
 ## Overview
 
