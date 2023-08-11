@@ -2,11 +2,11 @@
 title: "Github User App"
 techStacks: "Android Native, Rest-API, Retrofit"
 year: "2020"
-image: "/images/projects/mobile/userGitHub/github_hero.png"
+image: "/images/projects/mobile/github-user-app/github_hero.png"
 ---
 
 <div className="flex items-center justify-center">
-<img src="/images/projects/mobile/userGitHub/github_hero.png" width="720" height="720" alt="Github User App" >
+<img src="/images/projects/mobile/github-user-app/github_hero.png" width="720" height="720" alt="Github User App" >
 </div>
 
 **Client**: Personal learning project and not a client-based project
