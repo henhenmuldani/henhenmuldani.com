@@ -10,7 +10,7 @@ import {
   //CardFooter,
   CardTitle,
 } from "@/components/ui/card";
-// import { Badge } from "@/components/ui/badge";
+//* import { Badge } from "@/components/ui/badge";
 
 const ProjectsItem = (props: ProjectMetadata) => {
   return (
@@ -20,6 +20,7 @@ const ProjectsItem = (props: ProjectMetadata) => {
         <Image
           className="border border-black dark:border-white"
           src={props.image}
+          key={props.slug}
           alt={props.title}
           width={250}
           height={250}

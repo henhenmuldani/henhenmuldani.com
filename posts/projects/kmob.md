@@ -5,7 +5,9 @@ year: "2021"
 image: "/images/projects/mobile/kmob/kmob_hero.png"
 ---
 
-![KMOB App](/images/projects/mobile/kmob/kmob_hero.png)
+<div className="flex items-center justify-center">
+<img src="/images/projects/mobile/kmob/kmob_hero.png" width="720" height="720" alt="KMOB App" >
+</div>
 
 **Client**: My friend who works at Inspektorat Jabar
 

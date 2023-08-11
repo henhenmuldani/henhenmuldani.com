@@ -75,16 +75,20 @@ const Navigation = () => {
             </Link>
           ))}
         </nav>
-        <button className="z-10 order-last md:hidden" onClick={handleOnClick}>
+        <button
+          aria-label="mobile-menu"
+          className="z-10 order-last md:hidden"
+          onClick={handleOnClick}
+        >
           {navigation ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
 
         {theme === "dark" ? (
-          <button onClick={() => setTheme("light")}>
+          <button aria-label="light" onClick={() => setTheme("light")}>
             <FiSun size={24} />
           </button>
         ) : (
-          <button onClick={() => setTheme("dark")}>
+          <button aria-label="dark" onClick={() => setTheme("dark")}>
             <FiMoon size={24} />
           </button>
         )}

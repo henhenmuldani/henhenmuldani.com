@@ -14,10 +14,13 @@ const ProjectsPreview = () => {
         </h1>
       </Link>
       <div className="mt-4 grid gap-4 md:grid-cols-3">
-        {projectMetadata.slice(0, size).map((project) => (
-          <ProjectsItem key={project.slug} {...project} /> //pake spread operator artinya sama dengan yang dibawah
-          // <PostPreview key={post.slug} title={post.title} subtitle={post.subtitle} date={post.date} slug={post.slug} />
-        ))}
+        {projectMetadata
+          .map((project) => (
+            <ProjectsItem key={project.slug} {...project} /> //pake spread operator artinya sama dengan yang dibawah
+            // <PostPreview key={post.slug} title={post.title} subtitle={post.subtitle} date={post.date} slug={post.slug} />
+          ))
+          .sort((a, b) => b.props.year - a.props.year)
+          .slice(0, size)}
       </div>
     </section>
   );

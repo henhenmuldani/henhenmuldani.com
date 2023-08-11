@@ -6,6 +6,7 @@ const Footer = () => {
     <section className="container mx-auto mb-4 flex max-w-screen-lg select-none items-center justify-center space-x-4 p-6">
       <Link
         className="hover:text-[#CBA65F]"
+        aria-label="linkedin"
         target="_blank"
         href={"https://www.linkedin.com/in/henhenmuldani/"}
       >
@@ -14,6 +15,7 @@ const Footer = () => {
 
       <Link
         className="hover:text-[#CBA65F]"
+        aria-label="github"
         target="_blank"
         href={"https://github.com/henhenmuldani"}
       >
@@ -30,6 +32,7 @@ const Footer = () => {
 
       <Link
         className="hover:text-[#CBA65F]"
+        aria-label="instagram"
         target="_blank"
         href={"https://www.instagram.com/henhenmuldani/"}
       >
