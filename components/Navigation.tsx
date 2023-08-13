@@ -49,10 +49,10 @@ const Navigation = () => {
     //* !navigation ? (hide) : (visible);
   };
 
-  console.log(theme);
+  //* console.log(theme);
 
   return (
-    <div className="z-10 mx-auto flex select-none items-center justify-between bg-white p-6 dark:bg-black">
+    <div className="z-10 mx-auto flex select-none items-center justify-between p-6">
       <Link href="/">
         {theme === "dark" ? (
           <Image src={LogoDark} alt="Logo Henhen" height={36} width={36} />
