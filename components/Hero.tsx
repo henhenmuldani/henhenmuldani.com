@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="flex flex-col items-center justify-center p-6 md:flex-row md:space-x-4">
       <Link href={"/"}>
         <Image
-          className="select-none rounded-full border-8 border-black shadow-black hover:border-[#CBA65F] dark:border-white dark:hover:border-[#CBA65F]"
+          className="select-none rounded-full border-8 border-foreground shadow-foreground hover:border-[#CBA65F]"
           src={ProfileImage}
           alt="Henhen Imam Muldani"
           width={250}
@@ -16,7 +16,7 @@ const Hero = () => {
           priority={true}
         />
       </Link>
-      <div className="text-dark dark:text-light">
+      <div className="text-foreground">
         <h1 className="mt-6 text-4xl font-bold md:mt-0">
           I&#39;m Henhen Imam Muldani
         </h1>

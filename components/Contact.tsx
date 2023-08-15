@@ -64,11 +64,11 @@ const Contact = () => {
       <h1 className="text-center text-4xl font-black hover:text-[#CBA65F]">
         Send Me a Message
       </h1>
-      <div className="mx-auto mt-4 max-w-2xl rounded-2xl border-b-8 border-r-8 border-black shadow-none hover:border-white dark:border-white dark:hover:border-black">
+      <div className="mx-auto mt-4 max-w-2xl rounded-2xl border-b-8 border-r-8 border-foreground shadow-none hover:border-background">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="grid items-center gap-1 space-y-4 rounded-md border-4 border-black p-5 shadow-none dark:border-white"
+            className="grid items-center gap-1 space-y-4 rounded-md border-4 border-foreground p-5 font-semibold shadow-none"
           >
             <FormField
               control={form.control}
@@ -80,7 +80,7 @@ const Contact = () => {
                   <FormControl>
                     <Input
                       placeholder="Enter your name"
-                      className="border-b-4 border-r-4 border-black shadow-none outline-none focus:border-[#CBA65F] focus-visible:ring-0 dark:border-white dark:focus:border-[#CBA65F]"
+                      className="border-b-4 border-r-4 border-foreground shadow-none outline-none focus:border-[#CBA65F] focus-visible:ring-0"
                       {...field}
                     />
                   </FormControl>
@@ -102,7 +102,7 @@ const Contact = () => {
                     <Input
                       type="number"
                       placeholder="Enter your phone number"
-                      className="border-b-4 border-r-4 border-black shadow-none outline-none focus:border-[#CBA65F] focus-visible:ring-0 dark:border-white dark:focus:border-[#CBA65F]"
+                      className="border-b-4 border-r-4 border-foreground shadow-none outline-none focus:border-[#CBA65F] focus-visible:ring-0"
                       {...field}
                     />
                   </FormControl>
@@ -121,7 +121,7 @@ const Contact = () => {
                   <FormControl>
                     <Textarea
                       placeholder="Type your message here."
-                      className="border-b-4 border-r-4 border-black shadow-none outline-none focus:border-[#CBA65F] focus-visible:ring-0 dark:border-white dark:focus:border-[#CBA65F]"
+                      className="border-b-4 border-r-4 border-foreground shadow-none outline-none focus:border-[#CBA65F] focus-visible:ring-0"
                       {...field}
                     />
                   </FormControl>
@@ -131,7 +131,7 @@ const Contact = () => {
             />
             <Button
               type="submit"
-              className="bg-black hover:bg-[#CBA65F] dark:bg-white dark:hover:bg-[#CBA65F]"
+              className="bg-foreground font-semibold hover:bg-[#CBA65F]"
             >
               Submit
             </Button>

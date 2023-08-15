@@ -62,7 +62,6 @@ const Navigation = () => {
         {/* <h1>HIM</h1> */}
         {/* <h1>{theme}</h1> */}
       </Link>
-
       <div className="flex items-center gap-x-6">
         <nav className="hidden select-none space-x-5 text-lg font-medium md:block">
           {links.map((link) => (
@@ -95,13 +94,13 @@ const Navigation = () => {
 
         {/* Tampilan Mobile */}
         {navigation && (
-          <div className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-white text-black dark:bg-black dark:text-white md:hidden">
+          <div className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-background text-foreground md:hidden">
             {links.map((link) => (
               <Link
                 key={link.id}
                 href={`/${link.name.toLowerCase()}`}
                 onClick={handleOnClick}
-                className="px-4 py-2 text-3xl font-medium capitalize text-black hover:text-[#CBA65F] dark:text-white"
+                className="px-4 py-2 text-3xl font-medium capitalize text-foreground hover:text-[#CBA65F]"
               >
                 {link.name}
               </Link>
