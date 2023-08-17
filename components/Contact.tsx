@@ -64,11 +64,11 @@ const Contact = () => {
       <h1 className="text-center text-4xl font-black hover:text-[#CBA65F]">
         Send Me a Message
       </h1>
-      <div className="mx-auto mt-4 max-w-2xl rounded-2xl border-b-8 border-r-8 border-foreground shadow-none hover:border-background">
+      <div className="mx-auto mt-4 max-w-2xl rounded-md border-4 border-foreground shadow-boxCard duration-300 hover:shadow-none">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="grid items-center gap-1 space-y-4 rounded-md border-4 border-foreground p-5 font-semibold shadow-none"
+            className="grid items-center gap-1 space-y-4 p-5 font-semibold"
           >
             <FormField
               control={form.control}
