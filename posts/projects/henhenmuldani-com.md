@@ -1,11 +1,11 @@
 ---
-title: "henhenmuldani.com"
+title: "This Website"
 techStacks: "Next.js, MDX, TailwindCSS"
 year: "2023"
 image: "/images/projects/web/henhenmuldani-com/henhenmuldani_hero.png"
 ---
 
-**Client**: Personal website
+**Client**: My personal website
 
 **Year**: 2023
 
@@ -13,7 +13,7 @@ image: "/images/projects/web/henhenmuldani-com/henhenmuldani_hero.png"
 
 ## Overview
 
-henhenmuldani.com is my personal website that I made to showcase my portfolio and my blog(still development). This website is made using Next.js(Typescript), TailwindCSS, MDX, and Notion-API. I use MDX to write my portofolio posts and I use Notion-API to store data from my message form at my website. This website is hosted on Vercel.
+This is my personal website that I made to showcase my portfolio and my blog(still development). This website is made using Next.js(Typescript), TailwindCSS, MDX, and Notion-API. I use MDX to write my portofolio posts and I use Notion-API to store data from my message form at my website. This website is hosted on Vercel.
 
 ## The Problem
 

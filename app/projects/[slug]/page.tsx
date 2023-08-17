@@ -39,7 +39,7 @@ const ProjectDetailPage = (props: any) => {
           height={720}
         />
       </div>
-      <h1 className="mt-4 text-4xl font-black">{post.data.title}</h1>
+      <h1 className="mt-4 text-3xl font-black">{post.data.title}</h1>
       <article className="prose prose-slate max-w-none dark:prose-invert dark:prose-pre:bg-neutral-600">
         <Markdown>{post.content}</Markdown>
       </article>
