@@ -18,7 +18,7 @@ const ProjectsItem = (props: ProjectMetadata) => {
       <Card className="flex flex-col items-center rounded-md border-4 border-foreground p-5 shadow-none">
         {/* <div className="w-12 h-12 bg-red-400"></div> */}
         <Image
-          className="rounded-md border border-foreground"
+          className="rounded-md border-4 border-foreground"
           src={props.image}
           key={props.slug}
           alt={props.title}

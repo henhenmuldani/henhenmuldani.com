@@ -5,10 +5,6 @@ year: "2020"
 image: "/images/projects/mobile/bhisma-learning-app/bhisma_hero.png"
 ---
 
-<div className="flex items-center justify-center">
-<img src="/images/projects/mobile/bhisma-learning-app/bhisma_hero.png" width="720" height="720" alt="Bhisma Learning App" >
-</div>
-
 **Client**: My work when I was as an Android Developer at PT. Sinergi Multi Servindo
 
 **Year**: 2020

@@ -5,10 +5,6 @@ year: "2021"
 image: "/images/projects/mobile/movie-catalogue-app/movie_hero.png"
 ---
 
-<div className="flex items-center justify-center">
-<img src="/images/projects/mobile/movie-catalogue-app/movie_hero.png" width="720" height="720" alt="MovieCatalogue App" >
-</div>
-
 **Client**: Personal learning project and not a client-based project
 
 **Year**: 2021

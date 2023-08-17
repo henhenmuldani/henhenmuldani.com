@@ -5,10 +5,6 @@ year: "2023"
 image: "/images/projects/web/henhenmuldani-com/henhenmuldani_hero.png"
 ---
 
-<div className="flex items-center justify-center">
-<img src="/images/projects/web/henhenmuldani-com/henhenmuldani_hero.png" width="720" height="720" alt="henhenmuldani.com" >
-</div>
-
 **Client**: Personal website
 
 **Year**: 2023

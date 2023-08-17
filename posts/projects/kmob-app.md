@@ -5,10 +5,6 @@ year: "2021"
 image: "/images/projects/mobile/kmob-app/kmob_hero.png"
 ---
 
-<div className="flex items-center justify-center">
-<img src="/images/projects/mobile/kmob-app/kmob_hero.png" width="720" height="720" alt="KMOB App" >
-</div>
-
 **Client**: My friend who works at Inspektorat Jabar
 
 **Year**: 2021
