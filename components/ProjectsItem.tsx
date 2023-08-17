@@ -14,7 +14,7 @@ import {
 
 const ProjectsItem = (props: ProjectMetadata) => {
   return (
-    <Card className="flex flex-col items-center rounded-md border-4 border-foreground p-5 shadow-boxCard duration-300 hover:shadow-none">
+    <Card className="flex flex-col items-center rounded-md border-4 border-foreground p-5 shadow-8xl duration-300 hover:shadow-none">
       <Image
         className="rounded-md border-4 border-foreground"
         src={props.image}

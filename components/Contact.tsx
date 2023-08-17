@@ -64,7 +64,7 @@ const Contact = () => {
       <h1 className="text-center text-4xl font-black hover:text-[#CBA65F]">
         Send Me a Message
       </h1>
-      <div className="mx-auto mt-4 max-w-2xl rounded-md border-4 border-foreground shadow-boxCard duration-300 hover:shadow-none">
+      <div className="shadow-8xl mx-auto mt-4 max-w-2xl rounded-md border-4 border-foreground duration-300 hover:shadow-none">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
