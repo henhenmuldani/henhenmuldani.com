@@ -44,7 +44,7 @@ const Contact = () => {
     //* alert(JSON.stringify(values));
     //* console.log(values);
     //! Local
-    /*     const res = await fetch("http://localhost:3000/api/submit-form", {
+    /**     const res = await fetch("http://localhost:3000/api/submit-form", {
       method: "POST",
       body: JSON.stringify(values),
     }); */

@@ -5,9 +5,9 @@ year: "2020"
 image: "/images/projects/mobile/github-user-app/github_hero.png"
 ---
 
-<!-- <div className="flex items-center justify-center">
+<div className="flex items-center justify-center">
 <img src="/images/projects/mobile/github-user-app/github_hero.png" width="720" height="720" alt="Github User App" >
-</div> -->
+</div>
 
 **Client**: Personal learning project and not a client-based project
 
