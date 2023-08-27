@@ -5,8 +5,6 @@ year: "2020"
 image: "/images/projects/mobile/github-user-app/github_hero.png"
 ---
 
-**Client**: Personal learning project and not a client-based project
-
 **Year**: 2020
 
 **Tech Stacks**: Android Native(Java), Rest-API, Retrofit

@@ -5,8 +5,6 @@ year: "2021"
 image: "/images/projects/mobile/movie-catalogue-app/movie_hero.png"
 ---
 
-**Client**: Personal learning project and not a client-based project
-
 **Year**: 2021
 
 **Tech Stacks**: Android Native(Java), Rest-API, Retrofit

@@ -5,8 +5,6 @@ year: "2023"
 image: "/images/projects/web/henhenmuldani-com/henhenmuldani_hero.png"
 ---
 
-**Client**: My personal website
-
 **Year**: 2023
 
 **Tech Stacks**: Next.js(Typescript), MDX, TailwindCSS, Notion-API, Vercel

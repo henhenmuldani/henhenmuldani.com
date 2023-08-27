@@ -5,7 +5,9 @@ year: "2020"
 image: "/images/projects/mobile/bhisma-learning-app/bhisma_hero.png"
 ---
 
-**Client**: My work when I was as an Android Developer at PT. Sinergi Multi Servindo
+**Company**: PT. Sinergi Multi Servindo
+
+**Position**: Android Developer
 
 **Year**: 2020
 
@@ -18,3 +20,11 @@ Bhisma Learning App is an app that can make you learn from anywhere and anytime.
 ## The Problem
 
 Covid-19 pandemic has changed the way we learn. We can't go to school and learn like usual. We need to learn from home. But, not all school has a good system to make their student learn from home. So, we need a system that can make student learn from home.
+
+## The User & Audience
+
+As i mentioned above, the main goal of the site is to help student to learn from home. So the user of this app is a teacher, student, and parent.
+
+## Role & Responsibility
+
+I was responsible for creating all the features in this android app like login, register, create material, create quiz, do quiz, etc. But i didn't create the backend API for this app. I only consume the API.
