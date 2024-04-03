@@ -4,13 +4,10 @@ import Image from "next/image";
 import { ProjectMetadata } from "@/lib/ProjectMetadata";
 import {
   Card,
-  //CardContent,
   CardDescription,
   CardHeader,
-  //CardFooter,
   CardTitle,
 } from "@/components/ui/card";
-//* import { Badge } from "@/components/ui/badge";
 
 const ProjectsItem = (props: ProjectMetadata) => {
   return (
@@ -23,17 +20,14 @@ const ProjectsItem = (props: ProjectMetadata) => {
         width={250}
         height={250}
       />
-      {/* <Badge className="mt-4 cursor-pointer place-self-start bg-black hover:bg-[#CBA65F] dark:bg-white dark:hover:bg-[#CBA65F]">
-          Flutter
-        </Badge> */}
       <CardHeader className="place-self-start px-0">
-        <small> {props.year}</small>
+        <p> {props.year}</p>
         <Link href={`/projects/${props.slug}`}>
           <CardTitle className="cursor-pointer hover:text-[#CBA65F]">
             {props.title}
           </CardTitle>
         </Link>
-        <CardDescription className="font-medium text-foreground">
+        <CardDescription className="text-base font-medium">
           {props.techStacks}
         </CardDescription>
       </CardHeader>

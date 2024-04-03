@@ -6,37 +6,52 @@ import LogoDark from "../public/images/logo_light.svg";
 import LogoLight from "../public/images/logo_dark.svg";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-
 const links = [
-  // {
-  //   id: 0,
-  //   name: "Blog",
-  // },
   {
     id: 1,
-    name: "Projects",
+    name: "About",
   },
   {
     id: 2,
+    name: "Blog",
+  },
+  {
+    id: 3,
+    name: "Projects",
+  },
+  {
+    id: 4,
     name: "Contact",
   },
-  // {
-  //   id: 3,
-  //   name: "Certificate",
-  // },
 ];
 const Navigation = () => {
   // dark mode switch
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  //button menu on mobile
+  // button menu on mobile
   const [navigation, setNavigation] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
   if (!mounted) return null;
+
+  // set Logo based on theme
+  let srcLogo;
+
+  switch (theme) {
+    case "light":
+      srcLogo = LogoLight;
+      break;
+    case "dark":
+      srcLogo = LogoDark;
+      break;
+    default:
+      srcLogo =
+        "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+      break;
+  }
 
   const handleOnClick = () => {
     setNavigation(!navigation);
@@ -45,35 +60,30 @@ const Navigation = () => {
     } else {
       document.body.style.overflowY = "visible";
     }
-    //bisa disingkat jadi
+    // can be simplified to
     //* !navigation ? (hide) : (visible);
   };
 
-  //* console.log(theme);
-
   return (
-    <div className="z-10 mx-auto flex select-none items-center justify-between p-6">
+    <nav className="flex items-center justify-between p-6">
       <Link href="/">
-        {theme === "dark" ? (
-          <Image src={LogoDark} alt="Logo Henhen" height={36} width={36} />
-        ) : (
-          <Image src={LogoLight} alt="Logo Henhen" height={36} width={36} />
-        )}
-        {/* <h1>HIM</h1> */}
-        {/* <h1>{theme}</h1> */}
+        <Image src={srcLogo} width={36} height={36} alt="Logo Henhen" />
       </Link>
       <div className="flex items-center gap-x-6">
-        <nav className="hidden select-none space-x-5 text-lg font-medium md:block">
-          {links.map((link) => (
-            <Link
-              href={`/${link.name.toLowerCase()}`}
-              key={link.id}
-              className="select-text hover:text-[#CBA65F]"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+        <div className="hidden text-xl font-medium md:block">
+          <ul className="flex space-x-4">
+            {links.map((link) => (
+              <li key={link.id}>
+                <Link
+                  href={`/${link.name.toLowerCase()}`}
+                  className="hover:text-[#CBA65F]"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
         <button
           aria-label="mobile-menu"
           className="z-10 order-last md:hidden"
@@ -92,23 +102,26 @@ const Navigation = () => {
           </button>
         )}
 
-        {/* Tampilan Mobile */}
+        {/* Mobile View */}
         {navigation && (
-          <div className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-background text-foreground md:hidden">
-            {links.map((link) => (
-              <Link
-                key={link.id}
-                href={`/${link.name.toLowerCase()}`}
-                onClick={handleOnClick}
-                className="px-4 py-2 text-3xl font-medium capitalize text-foreground hover:text-[#CBA65F]"
-              >
-                {link.name}
-              </Link>
-            ))}
+          <div className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-background md:hidden">
+            <ul className="space-y-2">
+              {links.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    href={`/${link.name.toLowerCase()}`}
+                    onClick={handleOnClick}
+                    className="text-xl font-medium hover:text-[#CBA65F]"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 

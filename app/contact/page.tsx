@@ -1,11 +1,17 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
+import Contact from "@/components/Contact";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Henhen Imam M - Contact",
+};
 
 const email = "henhenmuldani@gmail.com";
 const ContactPage = () => {
   return (
     <section className="p-6">
-      <h1 className="text-4xl font-black">Contact</h1>
+      <h1 className="text-3xl font-black">Contact</h1>
       <div className="mt-4 font-medium">
         <p>Have a question?</p>
         <p>
@@ -25,9 +31,10 @@ const ContactPage = () => {
         target="_blank"
         href={`mailto:${email}`}
       >
-        <MdEmail size={40} />
+        <MdEmail size={36} />
         <p className="ml-2 text-lg font-medium">{email}</p>
       </a>
+      <Contact />
     </section>
   );
 };

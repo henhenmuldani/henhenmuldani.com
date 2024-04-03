@@ -9,9 +9,7 @@ const ProjectsPreview = () => {
   return (
     <section className="p-6">
       <Link href={`/projects`}>
-        <h1 className="cursor-pointer text-4xl font-black hover:text-[#CBA65F]">
-          Projects
-        </h1>
+        <h1 className="text-3xl font-black hover:text-[#CBA65F]">Projects</h1>
       </Link>
       <div className="mt-4 grid gap-4 md:grid-cols-3">
         {projectMetadata

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
-    <section className="container mx-auto mb-4 flex max-w-screen-lg select-none items-center justify-center space-x-4 p-6">
+    <section className="container mx-auto flex items-center justify-center space-x-4 p-6">
       <Link
         className="hover:text-[#CBA65F]"
         aria-label="linkedin"
