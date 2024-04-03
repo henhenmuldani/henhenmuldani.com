@@ -4,6 +4,22 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getProjectMetadata from "@/lib/getProjectMetadata";
 import Image from "next/image";
+import { Metadata } from "next";
+
+type Props = {
+  params: { slug: string };
+};
+
+// set dynamic metadata
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  // read route params
+  const slug = params.slug;
+  const post = getPostContent(slug);
+
+  return {
+    title: `Henhen Imam M - Projects | ${post.data.title}`,
+  };
+}
 
 const getPostContent = (slug: string) => {
   const folder = "posts/projects/";
@@ -21,8 +37,8 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const ProjectDetailPage = (props: any) => {
-  const slug = props.params.slug;
+const ProjectDetailPage = ({ params }: Props) => {
+  const slug = params.slug;
   const post = getPostContent(slug);
   return (
     <section className="p-6">
