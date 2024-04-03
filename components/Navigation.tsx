@@ -13,14 +13,10 @@ const links = [
   },
   {
     id: 2,
-    name: "Blog",
-  },
-  {
-    id: 3,
     name: "Projects",
   },
   {
-    id: 4,
+    id: 3,
     name: "Contact",
   },
 ];
