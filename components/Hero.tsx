@@ -22,10 +22,10 @@ const Hero = () => {
           I&#39;m Henhen Imam Muldani
         </h1>
         <div className="mt-4 text-2xl font-medium">
-          <h1>Fullstack Web Developer 💻</h1>
-          <h1>Android Developer 📱</h1>
-          <h1>Coding Teacher 👨‍🏫</h1>
-          <h1>Civil Servant 👨‍💻</h1>
+          <h2>Fullstack Web Developer 💻</h2>
+          <h2>Android Developer 📱</h2>
+          <h2>Coding Teacher 👨‍🏫</h2>
+          <h2>Civil Servant 👨‍💻</h2>
         </div>
       </div>
     </section>
